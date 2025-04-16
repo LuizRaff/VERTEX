@@ -1,0 +1,11 @@
+variable,proportion,label,short_label
+adsym_unlisted_2addi,1.0,<b>->Any additional other sign(s) or abnormality ?</b>,<b>->Any additional other sign(s) or ...</b>
+adsym_feverplus,0.8926174496644296,<b>Fever / chills / rigors</b>,<b>Fever / chills / rigors</b>
+adsym_myalgia,0.8079470198675497,<b>Muscle aches / Myalgia</b>,<b>Muscle aches / Myalgia</b>
+adsym_fatigue,0.6423841059602649,<b>Fatigue / Malaise / Lethargy</b>,<b>Fatigue / Malaise / Lethargy</b>
+adsym_headache,0.6357615894039735,<b>Headache</b>,<b>Headache</b>
+adsym_vomit2d,0.5737704918032787,"<b>If yes, persistent vomiting? (2+/day)</b>","<b>If yes, persistent vomiting? (2+/day)</b>"
+adsym_unlisted_3item___Speech disturbances,0.5,"<b>>->Select additional other sign(s) or abnormality 4</b>, Speech disturbances","<b>>->Select additional other sign(s) or ...</b>, Speech disturbances"
+adsym_unlisted_2item___Retention of urine,0.5,"<b>->Select additional other sign(s) or abnormality 3</b>, Retention of urine","<b>->Select additional other sign(s) or ...</b>, Retention of urine"
+adsym_unlisted_2item___Feeding difficulty,0.5,"<b>->Select additional other sign(s) or abnormality 3</b>, Feeding difficulty","<b>->Select additional other sign(s) or ...</b>, Feeding difficulty"
+adsym_unlisted_3item___Visual disturbances,0.5,"<b>>->Select additional other sign(s) or abnormality 4</b>, Visual disturbances","<b>>->Select additional other sign(s) or ...</b>, Visual disturbances"

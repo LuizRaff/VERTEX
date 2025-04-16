@@ -1,0 +1,56 @@
+Variable,All,Discharged,Death,Censored
+<b>Totals</b>,154,148,5,1
+<b><i>COMPLICATIONS</i></b>,,,,
+<b>Shock </b> (*), 20 (13.0) | 154, 14 ( 9.5) | 148,5 (100.) | 5,1 (100.) | 1
+<b>Re-shock episodes</b> (*),  4 ( 2.6) | 153,  2 ( 1.4) | 148,2 (50.0) | 4,0 ( 0.0) | 1
+<b>Number of re-shock episodes</b> (*),,,,
+   ↳ 1,  3 (75.0) |   4,  2 (100.) |   2,1 (50.0) | 2,N/A
+   ↳ 2,  1 (25.0) |   4,  0 ( 0.0) |   2,1 (50.0) | 2,N/A
+<b>Severe bleeding (requiring intervention)</b> (*),  4 ( 2.6) | 154,  4 ( 2.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+<b>Severe bleeding site(s)</b>,,,,
+   ↳ Petechiae,  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Nose,  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ GI tract,  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Vaginal,  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Other(s),  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+<b>Pleural effusion / ascites</b> (*), 12 ( 7.8) | 153, 10 ( 6.8) | 147,2 (40.0) | 5,0 ( 0.0) | 1
+<b>Focal neurological signs</b> (*),  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+<b>Encephalitis / meningitis</b> (*),  3 ( 2.0) | 153,  2 ( 1.4) | 147,1 (20.0) | 5,0 ( 0.0) | 1
+<b>Sepsis</b> (*), 11 ( 7.2) | 153,  7 ( 4.8) | 147,4 (80.0) | 5,0 ( 0.0) | 1
+<b>Coagulation disorder / DIC</b> (*),  7 ( 4.6) | 153,  5 ( 3.4) | 147,1 (20.0) | 5,1 (100.) | 1
+<b>Any other organ complications</b> (*), 15 ( 9.9) | 152, 11 ( 7.5) | 146,4 (80.0) | 5,0 ( 0.0) | 1
+<b>Acute Respiratory Distress Syndrome (ARDS)</b> (*),  3 (20.0) |  15,  2 (18.2) |  11,1 (25.0) | 4,N/A
+<b>Cardiac arrhythmia</b> (*),  1 ( 6.7) |  15,  1 ( 9.1) |  11,0 ( 0.0) | 4,N/A
+<b>Cardiac arrest</b> (*),  3 (20.0) |  15,  0 ( 0.0) |  11,3 (75.0) | 4,N/A
+<b>Myocarditis / pericarditis</b> (*),  2 (14.3) |  14,  2 (20.0) |  10,0 ( 0.0) | 4,N/A
+<b>Acute renal injury / acute renal failure</b> (*),  6 (40.0) |  15,  4 (36.4) |  11,2 (50.0) | 4,N/A
+<b>Severe liver disease (new onset)</b> (*),  5 (33.3) |  15,  4 (36.4) |  11,1 (25.0) | 4,N/A
+<b>Acute hepatitis</b> (*),  3 (75.0) |   4,  3 (75.0) |   4,N/A,N/A
+<b>Hepatic encephalopathy (any grade)</b> (*),  1 (20.0) |   5,  0 ( 0.0) |   4,1 (100.) | 1,N/A
+<b>Other complication(s)</b> (*), 10 ( 6.5) | 153,  9 ( 6.1) | 147,1 (20.0) | 5,0 ( 0.0) | 1
+<b>Select other complication(s)</b> (*),,,,
+   ↳ Pneumonia,  2 (20.0) |  10,  2 (22.2) |   9,0 ( 0.0) | 1,N/A
+   ↳ Bleeding,  2 (20.0) |  10,  2 (22.2) |   9,0 ( 0.0) | 1,N/A
+   ↳ Transient hypotension,  1 (10.0) |  10,  1 (11.1) |   9,0 ( 0.0) | 1,N/A
+   ↳ Other,  5 (50.0) |  10,  4 (44.4) |   9,1 (100.) | 1,N/A
+<b>Any additional other complication(s) ?</b> (*),  1 (10.0) |  10,  1 (11.1) |   9,0 ( 0.0) | 1,N/A
+<b>>Select additional other complication(s) 2</b> (*),,,,
+   ↳ Other,  1 (100.) |   1,  1 (100.) |   1,N/A,N/A
+<b><i>OUTCOME</i></b>,,,,
+<b>Was the patient's MAIN diagnosis dengue?</b> (*),146 (95.4) | 153,143 (97.3) | 147,2 (40.0) | 5,1 (100.) | 1
+<b>What was the final classification of dengue?</b> (*),,,,
+   ↳ Uncomplicated dengue, 18 (12.5) | 144, 18 (12.8) | 141,0 ( 0.0) | 2,0 ( 0.0) | 1
+   ↳ Dengue with warning signs,111 (77.1) | 144,110 (78.0) | 141,1 (50.0) | 2,0 ( 0.0) | 1
+   ↳ Severe dengue, 15 (10.4) | 144, 13 ( 9.2) | 141,1 (50.0) | 2,1 (100.) | 1
+<b>Severe dengue complications:</b>,,,,
+   ↳ Dengue shock syndrome, 10 ( 6.9) | 144,  8 ( 5.7) | 141,1 (50.0) | 2,1 (100.) | 1
+   ↳ Severe bleeding,  2 ( 1.4) | 144,  2 ( 1.4) | 141,0 ( 0.0) | 2,0 ( 0.0) | 1
+   ↳ Severe organ impairment,  7 ( 4.9) | 144,  6 ( 4.3) | 141,1 (50.0) | 2,0 ( 0.0) | 1
+<b>Was there any secondary diagnosis?</b> (*), 37 (24.3) | 152, 34 (23.1) | 147,3 (75.0) | 4,0 ( 0.0) | 1
+<b>Outcome</b> (*),,,,
+   ↳ Discharged alive,145 (94.2) | 154,145 (98.0) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Discharged against medical advice,  3 ( 1.9) | 154,  3 ( 2.0) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Transfer to other facility,  1 ( 0.6) | 154,  0 ( 0.0) | 148,0 ( 0.0) | 5,1 (100.) | 1
+   ↳ Death,  5 ( 3.2) | 154,  0 ( 0.0) | 148,5 (100.) | 5,0 ( 0.0) | 1
+<b>Ongoing health care needs relating to this admission for pathogen</b> (*), 23 (15.9) | 145, 23 (15.9) | 145,N/A,N/A
+<b>Ongoing health care needs NOT related to pathogen episode</b> (*), 36 (25.0) | 144, 36 (25.0) | 144,N/A,N/A

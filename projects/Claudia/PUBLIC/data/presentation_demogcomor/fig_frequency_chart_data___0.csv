@@ -1,0 +1,11 @@
+variable,proportion,label,short_label
+comor_unlisted_3item___Other,1.0,"<b>>->Select additional other relevant comorbidity(s) 4</b>, Other","<b>>->Select additional other relevant ...</b>, Other"
+comor_unlisted_1addi,0.6666666666666666,<b>>Any additional other relevant comorbidity(s) ?</b>,<b>>Any additional other relevant ...</b>
+comor_unlisted_1item___Other,0.6666666666666666,"<b>>Select additional other relevant comorbidity(s) 2</b>, Other","<b>>Select additional other relevant ...</b>, Other"
+comor_unlisted_2addi,0.5,<b>->Any additional other relevant comorbidity(s) ?</b>,<b>->Any additional other relevant ...</b>
+comor_unlisted_2item___Other,0.5,"<b>->Select additional other relevant comorbidity(s) 3</b>, Other","<b>->Select additional other relevant ...</b>, Other"
+comor_aids_cd4___500 or more,0.5,"<b>Most recent CD4 count (cells/uL)</b>, 500 or more","<b>Most recent CD4 count (cells/uL)</b>, 500 or more"
+comor_unlisted_2item___Atrial Fibrillation,0.5,"<b>->Select additional other relevant comorbidity(s) 3</b>, Atrial Fibrillation","<b>->Select additional other relevant ...</b>, Atrial Fibrillation"
+comor_unlisted_0item___Other,0.4375,"<b>Select other relevant comorbidity(s)</b>, Other","<b>Select other relevant comorbidity(s)</b>, Other"
+comor_aids_cd4___200-<500,0.42857142857142855,"<b>Most recent CD4 count (cells/uL)</b>, 200-<500","<b>Most recent CD4 count (cells/uL)</b>, 200-<500"
+comor_unlisted_1item___Hypothyroidism,0.3333333333333333,"<b>>Select additional other relevant comorbidity(s) 2</b>, Hypothyroidism","<b>>Select additional other relevant ...</b>, Hypothyroidism"

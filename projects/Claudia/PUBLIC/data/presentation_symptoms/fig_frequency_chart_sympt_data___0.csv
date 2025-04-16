@@ -1,0 +1,11 @@
+variable,proportion,label,short_label
+"sympt_haemorrhag_yn___Yes, non-severe",0.35947712418300654,"<b>Bleeding / haemorrhage</b>, Yes, non-severe","<b>Bleeding / haemorrhage</b>, Yes, non-severe"
+sympt_haemorrhag_site___Petechiae,0.0915032679738562,"<b>Specify bleeding / haemorrhage site(s)</b>, Petechiae","<b>Specify bleeding / haemorrhage site(s)</b>, Petechiae"
+sympt_haemorrhag_site___Gums,0.08496732026143791,"<b>Specify bleeding / haemorrhage site(s)</b>, Gums","<b>Specify bleeding / haemorrhage site(s)</b>, Gums"
+sympt_haemorrhag_site___Nose,0.0784313725490196,"<b>Specify bleeding / haemorrhage site(s)</b>, Nose","<b>Specify bleeding / haemorrhage site(s)</b>, Nose"
+sympt_haemorrhag_site___GI tract,0.0784313725490196,"<b>Specify bleeding / haemorrhage site(s)</b>, GI tract","<b>Specify bleeding / haemorrhage site(s)</b>, GI tract"
+sympt_haemorrhag_site___Vagina,0.05228758169934641,"<b>Specify bleeding / haemorrhage site(s)</b>, Vagina","<b>Specify bleeding / haemorrhage site(s)</b>, Vagina"
+sympt_haemorrhag_site___Urinary tract,0.0392156862745098,"<b>Specify bleeding / haemorrhage site(s)</b>, Urinary tract","<b>Specify bleeding / haemorrhage site(s)</b>, Urinary tract"
+sympt_haemorrhag_site___Other(s),0.026143790849673203,"<b>Specify bleeding / haemorrhage site(s)</b>, Other(s)","<b>Specify bleeding / haemorrhage site(s)</b>, Other(s)"
+sympt_haemorrhag_site___Skin,0.0196078431372549,"<b>Specify bleeding / haemorrhage site(s)</b>, Skin","<b>Specify bleeding / haemorrhage site(s)</b>, Skin"
+"sympt_haemorrhag_yn___Yes, severe (requires intervention)",0.006535947712418301,"<b>Bleeding / haemorrhage</b>, Yes, severe (requires intervention)","<b>Bleeding / haemorrhage</b>, Yes, severe (requires intervention)"

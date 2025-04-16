@@ -1,0 +1,12 @@
+variable,proportion,label,short_label
+treat_rtt_typ___Intermittent,1.0,"<b>Type of renal replacement therapy (RRT) or dialysis / hemofiltration</b>, Intermittent","<b>Type of renal replacement therapy (RRT) ...</b>, Intermittent"
+treat_o2supp_nivtyp___CPAP,1.0,"<b>Type of Non-invasive respiratory support</b>, CPAP","<b>Type of Non-invasive respiratory support</b>, CPAP"
+treat_o2supp_pao2yn___Arterial,1.0,"<b>PaO2 sample type</b>, Arterial","<b>PaO2 sample type</b>, Arterial"
+treat_fluid_parent,0.9527027027027027,<b>Parenteral IV fluid?</b>,<b>Parenteral IV fluid?</b>
+treat_fluid_parentyp___Crystalloid,0.9391891891891891,"<b>Select all parenteral fluid administered</b>, Crystalloid","<b>Select all parenteral fluid administered</b>, Crystalloid"
+treat_vasopress3,0.6666666666666666,<b>Dopamine >15ug/kg/min OR epinephrine(adrenaline) / norepinephrine(noradrenaline) > 0.1ug/kg/min</b>,<b>Dopamine >15ug/kg/min OR ...</b>
+treat_fluid_oral,0.6302521008403361,<b>Oral rehydration? </b>,<b>Oral rehydration? </b>
+treat_vasopress1,0.4,<b>Dopamine < 5ug/kg/min   OR   dobutamine   OR   milrinone   OR   levosimendan</b>,<b>Dopamine < 5ug/kg/min   OR   dobutamine ...</b>
+treat_vasopress2,0.3333333333333333,"<b>Dopamine 5-15ug/kg/min OR epinephrine(adrenaline) / norepinephrine(noradrenaline) < 0.1ug/kg/min OR  vasopressin   OR phenylephrine
+</b>",<b>Dopamine 5-15ug/kg/min OR ...</b>
+treat_icu,0.14189189189189189,<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>,<b>ICU / ITU / HDU / Intermediate Care ...</b>

@@ -1,0 +1,11 @@
+variable,count,label,short_label
+inter_ivfluid_occur,149,<b>Parenteral / IV fluid? </b>,<b>Parenteral / IV fluid? </b>
+inter_ivfluid_type___Crystalloid,147,"<b>Select all Parenteral / IV fluid that were administered</b>, Crystalloid","<b>Select all Parenteral / IV fluid that ...</b>, Crystalloid"
+inter_ivfluid_reas___Anorexia,57,"<b>Reason(s) for IV fluid (check all that apply)</b>, Anorexia","<b>Reason(s) for IV fluid (check all that ...</b>, Anorexia"
+inter_ivfluid_reas___High/rising haematocrit,52,"<b>Reason(s) for IV fluid (check all that apply)</b>, High/rising haematocrit","<b>Reason(s) for IV fluid (check all that ...</b>, High/rising haematocrit"
+inter_icu,31,<b>ICU / ITU / High Dependency Unit / Intermediate Care Unit admission</b>,<b>ICU / ITU / High Dependency Unit / ...</b>
+inter_ivfluid_reas___Other,29,"<b>Reason(s) for IV fluid (check all that apply)</b>, Other","<b>Reason(s) for IV fluid (check all that ...</b>, Other"
+inter_ivfluid_reas___Persistent vomiting,20,"<b>Reason(s) for IV fluid (check all that apply)</b>, Persistent vomiting","<b>Reason(s) for IV fluid (check all that ...</b>, Persistent vomiting"
+inter_ivfluid_reas___Shock,18,"<b>Reason(s) for IV fluid (check all that apply)</b>, Shock","<b>Reason(s) for IV fluid (check all that ...</b>, Shock"
+inter_diuretics,16,<b>Diuretics? </b>,<b>Diuretics? </b>
+inter_bpt_yn,11,<b>Blood product tranfusion?</b>,<b>Blood product tranfusion?</b>

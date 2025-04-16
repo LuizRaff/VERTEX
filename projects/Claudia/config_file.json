@@ -1,0 +1,17 @@
+{
+	"project_name": "Claudia",
+	"api_url": "",
+	"api_key": "",
+	"map_layout_center_latitude": 6,
+	"map_layout_center_longitude": -75,
+	"map_layout_zoom": 1.7,
+	"save_public_outputs": true,
+	"public_path": "PUBLIC/",
+	"insight_panels_path": "insight_panels/",
+	"insight_panels": [
+			"outcomes_comp",
+			"presentation_demogcomor",
+			"presentation_symptoms",
+			"treatments_interventions"
+	]
+}

@@ -1,0 +1,20 @@
+index,label,count
+"('comor_hypertensi',)","('<b>Hypertension (physician diagnosed)</b>',)",22
+"('comor_aids___YES-on ART',)","('<b>AIDS / HIV</b>, YES-on ART',)",13
+"('comor_hypertensi', 'comor_smoking___Former smoker')","('<b>Hypertension (physician diagnosed)</b>', '<b>Smoking</b>, Former smoker')",8
+"('comor_obesity',)","('<b>Obesity (as defined by clinical staff)</b>',)",8
+"('comor_smoking___Current smoker',)","('<b>Smoking</b>, Current smoker',)",7
+"('comor_hypertensi', 'comor_aids___YES-on ART')","('<b>Hypertension (physician diagnosed)</b>', '<b>AIDS / HIV</b>, YES-on ART')",6
+"('comor_aids___YES-on ART', 'comor_smoking___Current smoker')","('<b>AIDS / HIV</b>, YES-on ART', '<b>Smoking</b>, Current smoker')",4
+"('comor_obesity', 'comor_smoking___Current smoker')","('<b>Obesity (as defined by clinical staff)</b>', '<b>Smoking</b>, Current smoker')",4
+"('comor_smoking___Former smoker',)","('<b>Smoking</b>, Former smoker',)",4
+"('comor_hypertensi', 'comor_obesity')","('<b>Hypertension (physician diagnosed)</b>', '<b>Obesity (as defined by clinical staff)</b>')",3
+"('comor_hypertensi', 'comor_smoking___Current smoker')","('<b>Hypertension (physician diagnosed)</b>', '<b>Smoking</b>, Current smoker')",2
+"('comor_aids___YES-on ART', 'comor_obesity')","('<b>AIDS / HIV</b>, YES-on ART', '<b>Obesity (as defined by clinical staff)</b>')",2
+"('comor_aids___YES-on ART', 'comor_smoking___Former smoker')","('<b>AIDS / HIV</b>, YES-on ART', '<b>Smoking</b>, Former smoker')",2
+"('comor_hypertensi', 'comor_aids___YES-on ART', 'comor_obesity', 'comor_smoking___Current smoker')","('<b>Hypertension (physician diagnosed)</b>', '<b>AIDS / HIV</b>, YES-on ART', '<b>Obesity (as defined by clinical staff)</b>', '<b>Smoking</b>, Current smoker')",1
+"('comor_hypertensi', 'comor_aids___YES-on ART', 'comor_obesity')","('<b>Hypertension (physician diagnosed)</b>', '<b>AIDS / HIV</b>, YES-on ART', '<b>Obesity (as defined by clinical staff)</b>')",1
+"('comor_hypertensi', 'comor_aids___YES-on ART', 'comor_smoking___Former smoker')","('<b>Hypertension (physician diagnosed)</b>', '<b>AIDS / HIV</b>, YES-on ART', '<b>Smoking</b>, Former smoker')",1
+"('comor_hypertensi', 'comor_obesity', 'comor_smoking___Former smoker')","('<b>Hypertension (physician diagnosed)</b>', '<b>Obesity (as defined by clinical staff)</b>', '<b>Smoking</b>, Former smoker')",1
+"('comor_hypertensi', 'comor_obesity', 'comor_smoking___Current smoker')","('<b>Hypertension (physician diagnosed)</b>', '<b>Obesity (as defined by clinical staff)</b>', '<b>Smoking</b>, Current smoker')",1
+"('comor_obesity', 'comor_smoking___Former smoker')","('<b>Obesity (as defined by clinical staff)</b>', '<b>Smoking</b>, Former smoker')",1

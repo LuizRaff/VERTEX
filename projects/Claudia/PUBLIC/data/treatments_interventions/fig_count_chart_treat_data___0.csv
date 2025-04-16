@@ -1,0 +1,11 @@
+variable,count,label,short_label
+treat_fluid_parent,141,<b>Parenteral IV fluid?</b>,<b>Parenteral IV fluid?</b>
+treat_fluid_parentyp___Crystalloid,139,"<b>Select all parenteral fluid administered</b>, Crystalloid","<b>Select all parenteral fluid administered</b>, Crystalloid"
+treat_fluid_oral,75,<b>Oral rehydration? </b>,<b>Oral rehydration? </b>
+treat_icu,21,<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>,<b>ICU / ITU / HDU / Intermediate Care ...</b>
+treat_antibiotic,15,<b>Antibiotics</b>,<b>Antibiotics</b>
+treat_steroids,11,<b>Steroids</b>,<b>Steroids</b>
+treat_o2supp_suppleo2,8,<b>Supplemental oxygen</b>,<b>Supplemental oxygen</b>
+treat_vasopress,7,<b>Any vasopressor / inotropic support</b>,<b>Any vasopressor / inotropic support</b>
+treat_o2supp_type___Nasal prong,5,"<b>Select all types of respiratory support the patient received (from 00:00 to 24:00) on the day of assessment</b>, Nasal prong","<b>Select all types of respiratory support ...</b>, Nasal prong"
+treat_blood_occur,5,<b>Blood / blood products transfusion</b>,<b>Blood / blood products transfusion</b>

@@ -1,8 +1,8 @@
-import requests
-import pandas as pd
-import numpy as np
 import io
 
+import numpy as np
+import pandas as pd
+import requests
 
 ############################################
 # Functions that call to the API
@@ -740,18 +740,9 @@ def get_redcap_data(redcap_url, redcap_api_key, country_mapping=None):
     df_map, new_dictionary, quality_report = get_df_map(data, new_dictionary)
     df_forms_dict = get_df_forms(data, new_dictionary)
 
-    if country_mapping is None:
-        dag = data[['subjid', 'redcap_data_access_group']].drop_duplicates()
-        dag = dag.rename(columns={'redcap_data_access_group': 'site'})
-        dag['country_iso'] = dag['site'].apply(lambda x: x.split('-')[1])
-        df_map = pd.merge(df_map, dag, on='subjid', how='left')
-    else:
-        # TODO: Need something better here?
-        try:
-            df_map['country_iso'] = df_map['subjid'].str.split('-').str[0]
-            df_map['country_iso'] = df_map['country'].map(country_mapping)
-        except Exception:
-            df_map['country_iso'] = np.nan
+    df_map['country_iso'] = 'BRA'
+    df_map['site'] = '01'
+    
     # Add country_iso to dictionary
     countries = df_map['country_iso'].drop_duplicates().tolist()
     country_dict = {}

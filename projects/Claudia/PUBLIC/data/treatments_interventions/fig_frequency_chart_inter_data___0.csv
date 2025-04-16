@@ -1,0 +1,11 @@
+variable,proportion,label,short_label
+inter_fluiddrain_reas___Pleural effusion,1.0,"<b>Reason for this drainage</b>, Pleural effusion","<b>Reason for this drainage</b>, Pleural effusion"
+inter_nivent___CPAP,1.0,"<b>Type of non-invasive ventilation</b>, CPAP","<b>Type of non-invasive ventilation</b>, CPAP"
+inter_ivfluid_occur,0.9675324675324676,<b>Parenteral / IV fluid? </b>,<b>Parenteral / IV fluid? </b>
+inter_ivfluid_type___Crystalloid,0.9545454545454546,"<b>Select all Parenteral / IV fluid that were administered</b>, Crystalloid","<b>Select all Parenteral / IV fluid that ...</b>, Crystalloid"
+inter_ivfluid_reas___Anorexia,0.37012987012987014,"<b>Reason(s) for IV fluid (check all that apply)</b>, Anorexia","<b>Reason(s) for IV fluid (check all that ...</b>, Anorexia"
+inter_ivfluid_reas___High/rising haematocrit,0.33766233766233766,"<b>Reason(s) for IV fluid (check all that apply)</b>, High/rising haematocrit","<b>Reason(s) for IV fluid (check all that ...</b>, High/rising haematocrit"
+inter_icu,0.2012987012987013,<b>ICU / ITU / High Dependency Unit / Intermediate Care Unit admission</b>,<b>ICU / ITU / High Dependency Unit / ...</b>
+inter_ivfluid_reas___Other,0.18831168831168832,"<b>Reason(s) for IV fluid (check all that apply)</b>, Other","<b>Reason(s) for IV fluid (check all that ...</b>, Other"
+inter_ivfluid_reas___Persistent vomiting,0.12987012987012986,"<b>Reason(s) for IV fluid (check all that apply)</b>, Persistent vomiting","<b>Reason(s) for IV fluid (check all that ...</b>, Persistent vomiting"
+inter_ivfluid_reas___Shock,0.11688311688311688,"<b>Reason(s) for IV fluid (check all that apply)</b>, Shock","<b>Reason(s) for IV fluid (check all that ...</b>, Shock"
