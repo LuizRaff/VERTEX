@@ -1,0 +1,11 @@
+variable,proportion,label,short_label
+compl_unlisted_1item___Other,1.0,"<b>>Select additional other complication(s) 2</b>, Other","<b>>Select additional other ...</b>, Other"
+compl_reshockep___1,0.75,"<b>Number of re-shock episodes</b>, 1","<b>Number of re-shock episodes</b>, 1"
+compl_acutehepat,0.75,<b>Acute hepatitis</b>,<b>Acute hepatitis</b>
+compl_unlisted_0item___Other,0.5,"<b>Select other complication(s)</b>, Other","<b>Select other complication(s)</b>, Other"
+compl_acuterenal,0.4,<b>Acute renal injury / acute renal failure</b>,<b>Acute renal injury / acute renal failure</b>
+compl_severeliver,0.3333333333333333,<b>Severe liver disease (new onset)</b>,<b>Severe liver disease (new onset)</b>
+compl_reshockep___2,0.25,"<b>Number of re-shock episodes</b>, 2","<b>Number of re-shock episodes</b>, 2"
+compl_ards,0.2,<b>Acute Respiratory Distress Syndrome (ARDS)</b>,<b>Acute Respiratory Distress Syndrome ...</b>
+compl_unlisted_0item___Bleeding,0.2,"<b>Select other complication(s)</b>, Bleeding","<b>Select other complication(s)</b>, Bleeding"
+compl_unlisted_0item___Pneumonia,0.2,"<b>Select other complication(s)</b>, Pneumonia","<b>Select other complication(s)</b>, Pneumonia"

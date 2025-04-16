@@ -1,0 +1,11 @@
+variable,count,label,short_label
+comor_hypertensi,46,<b>Hypertension (physician diagnosed)</b>,<b>Hypertension (physician diagnosed)</b>
+comor_aids___YES-on ART,30,"<b>AIDS / HIV</b>, YES-on ART","<b>AIDS / HIV</b>, YES-on ART"
+comor_obesity,22,<b>Obesity (as defined by clinical staff)</b>,<b>Obesity (as defined by clinical staff)</b>
+comor_smoking___Current smoker,19,"<b>Smoking</b>, Current smoker","<b>Smoking</b>, Current smoker"
+comor_smoking___Former smoker,17,"<b>Smoking</b>, Former smoker","<b>Smoking</b>, Former smoker"
+comor_aids_cd4___500 or more,14,"<b>Most recent CD4 count (cells/uL)</b>, 500 or more","<b>Most recent CD4 count (cells/uL)</b>, 500 or more"
+comor_aids_cd4___200-<500,12,"<b>Most recent CD4 count (cells/uL)</b>, 200-<500","<b>Most recent CD4 count (cells/uL)</b>, 200-<500"
+comor_diabetes___YES - Type 2,11,"<b>Diabetes Mellitus</b>, YES - Type 2","<b>Diabetes Mellitus</b>, YES - Type 2"
+comor_diabetes___YES - Type 1,10,"<b>Diabetes Mellitus</b>, YES - Type 1","<b>Diabetes Mellitus</b>, YES - Type 1"
+comor_chrpulmona,9,<b>Chronic pulmonary disease (not asthma)</b>,<b>Chronic pulmonary disease (not asthma)</b>

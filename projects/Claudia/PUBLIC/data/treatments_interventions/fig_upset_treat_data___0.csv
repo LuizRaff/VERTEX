@@ -1,0 +1,6 @@
+index,count,short_label,label
+treat_fluid_parent,141,<b>Parenteral IV fluid?</b>,<b>Parenteral IV fluid?</b>
+treat_fluid_parentyp___Crystalloid,139,"<b>Select all parenteral fluid administered</b>, Crystalloid","<b>Select all parenteral fluid administered</b>, Crystalloid"
+treat_fluid_oral,75,<b>Oral rehydration? </b>,<b>Oral rehydration? </b>
+treat_icu,21,<b>ICU / ITU / HDU / Intermediate Care ...</b>,<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>
+treat_antibiotic,15,<b>Antibiotics</b>,<b>Antibiotics</b>

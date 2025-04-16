@@ -1,0 +1,6 @@
+index,count,short_label,label
+comor_hypertensi,46,<b>Hypertension (physician diagnosed)</b>,<b>Hypertension (physician diagnosed)</b>
+comor_aids___YES-on ART,30,"<b>AIDS / HIV</b>, YES-on ART","<b>AIDS / HIV</b>, YES-on ART"
+comor_obesity,22,<b>Obesity (as defined by clinical staff)</b>,<b>Obesity (as defined by clinical staff)</b>
+comor_smoking___Current smoker,19,"<b>Smoking</b>, Current smoker","<b>Smoking</b>, Current smoker"
+comor_smoking___Former smoker,17,"<b>Smoking</b>, Former smoker","<b>Smoking</b>, Former smoker"

@@ -1,0 +1,6 @@
+index,count,short_label,label
+inter_ivfluid_occur,149,<b>Parenteral / IV fluid? </b>,<b>Parenteral / IV fluid? </b>
+inter_ivfluid_type___Crystalloid,147,"<b>Select all Parenteral / IV fluid that ...</b>, Crystalloid","<b>Select all Parenteral / IV fluid that were administered</b>, Crystalloid"
+inter_ivfluid_reas___Anorexia,57,"<b>Reason(s) for IV fluid (check all that ...</b>, Anorexia","<b>Reason(s) for IV fluid (check all that apply)</b>, Anorexia"
+inter_ivfluid_reas___High/rising haematocrit,52,"<b>Reason(s) for IV fluid (check all that ...</b>, High/rising haematocrit","<b>Reason(s) for IV fluid (check all that apply)</b>, High/rising haematocrit"
+inter_icu,31,<b>ICU / ITU / High Dependency Unit / ...</b>,<b>ICU / ITU / High Dependency Unit / Intermediate Care Unit admission</b>

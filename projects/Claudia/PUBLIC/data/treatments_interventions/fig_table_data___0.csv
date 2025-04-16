@@ -1,0 +1,85 @@
+Variable,All,Discharged,Death,Censored
+<b>Totals</b>,154,148,5,1
+<b><i>TREATMENTS & INTERVENTIONS</i></b>,,,,
+<b>Oral rehydration? </b> (*), 72 (62.1) | 116, 70 (62.5) | 112,2 (50.0) | 4,N/A
+<b>Parenteral IV fluid?</b> (*),140 (94.6) | 148,136 (95.1) | 143,3 (75.0) | 4,1 (100.) | 1
+<b>Select all parenteral fluid administered</b>,,,,
+   ↳ Crystalloid,138 (93.2) | 148,134 (93.7) | 143,3 (75.0) | 4,1 (100.) | 1
+   ↳ Albumin,  3 ( 2.0) | 148,  2 ( 1.4) | 143,0 ( 0.0) | 4,1 (100.) | 1
+   ↳ Gelatin,  1 ( 0.7) | 148,  1 ( 0.7) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+   ↳ Other,  2 ( 1.4) | 148,  2 ( 1.4) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Blood / blood products transfusion</b> (*),  5 ( 3.4) | 147,  5 ( 3.5) | 142,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Select all blood products that were administered</b>,,,,
+   ↳ Platelets,  2 ( 1.4) | 147,  2 ( 1.4) | 142,0 ( 0.0) | 4,0 ( 0.0) | 1
+   ↳ Whole blood/packed RBC,  2 ( 1.4) | 147,  2 ( 1.4) | 142,0 ( 0.0) | 4,0 ( 0.0) | 1
+   ↳ Frozen fresh plasma,  1 ( 0.7) | 147,  1 ( 0.7) | 142,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Intravenous Immunoglobulin</b> (*),  0 ( 0.0) | 148,  0 ( 0.0) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Plasmapheresis / Plasma Exchange</b> (*),  0 ( 0.0) | 148,  0 ( 0.0) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Antibiotics</b> (*), 14 ( 9.5) | 148, 10 ( 7.0) | 143,4 (100.) | 4,0 ( 0.0) | 1
+<b>Steroids</b> (*), 11 ( 7.4) | 148,  9 ( 6.3) | 143,2 (50.0) | 4,0 ( 0.0) | 1
+<b>ICU / ITU / HDU / Intermediate Care Unit admission</b> (*), 21 (14.2) | 148, 18 (12.6) | 143,3 (75.0) | 4,0 ( 0.0) | 1
+<b>Supplemental oxygen</b> (*),  8 ( 5.4) | 148,  6 ( 4.2) | 143,2 (50.0) | 4,0 ( 0.0) | 1
+<b>Select all types of respiratory support the patient received (from 00:00 to 24:00) on the day of ...</b>,,,,
+   ↳ Nasal prong,  5 ( 3.4) | 148,  4 ( 2.8) | 143,1 (25.0) | 4,0 ( 0.0) | 1
+   ↳ Non-invasive respiratory support,  1 ( 0.7) | 148,  1 ( 0.7) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+   ↳ Invasive ventilation,  4 ( 2.7) | 148,  3 ( 2.1) | 143,1 (25.0) | 4,0 ( 0.0) | 1
+<b>PaO2 sample type</b> (*),,,,
+   ↳ Arterial,  4 (100.) |   4,  3 (100.) |   3,1 (100.) | 1,N/A
+<b>PaO2 </b> (+),150.1 ( 91.8-217.2) |   4, 98.2 ( 85.3-150.1) |   3,N/A,N/A
+<b>FiO2 at time of PaO2 </b> (+),39.0 (21.1-62.5) |   4,50.0 (39.0-75.0) |   3,N/A,N/A
+<b>Type of Non-invasive respiratory support</b> (*),,,,
+   ↳ CPAP,  1 (100.) |   1,  1 (100.) |   1,N/A,N/A
+<b>Neuromuscular blocking agents</b> (*),  1 ( 0.7) | 148,  1 ( 0.7) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Inhaled nitric oxide</b> (*),  1 ( 0.7) | 147,  1 ( 0.7) | 142,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Renal replacement therapy (RRT) or dialysis / hemofiltration</b> (*),  1 ( 0.7) | 148,  1 ( 0.7) | 143,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Type of renal replacement therapy (RRT) or dialysis / hemofiltration</b> (*),,,,
+   ↳ Intermittent,  1 (100.) |   1,  1 (100.) |   1,N/A,N/A
+<b>Any vasopressor / inotropic support</b> (*),  7 ( 4.7) | 148,  6 ( 4.2) | 143,1 (25.0) | 4,0 ( 0.0) | 1
+<b>Dopamine < 5ug/kg/min   OR   dobutamine   OR   milrinone   OR   levosimendan</b> (*),  2 (40.0) |   5,  2 (40.0) |   5,N/A,N/A
+<b>Dopamine 5-15ug/kg/min OR epinephrine(adrenaline) / norepinephrine(noradrenaline) < 0.1ug/kg/min OR ...</b> (*),  2 (33.3) |   6,  2 (33.3) |   6,N/A,N/A
+<b>Dopamine >15ug/kg/min OR epinephrine(adrenaline) / norepinephrine(noradrenaline) > 0.1ug/kg/min</b> (*),  4 (66.7) |   6,  3 (60.0) |   5,1 (100.) | 1,N/A
+<b><i>INTERVENTIONS</i></b>,,,,
+<b>Parenteral / IV fluid? </b> (*),149 (96.8) | 154,144 (97.3) | 148,4 (80.0) | 5,1 (100.) | 1
+<b>Select all Parenteral / IV fluid that were administered</b>,,,,
+   ↳ Crystalloid,147 (95.5) | 154,142 (95.9) | 148,4 (80.0) | 5,1 (100.) | 1
+   ↳ Albumin,  4 ( 2.6) | 154,  2 ( 1.4) | 148,1 (20.0) | 5,1 (100.) | 1
+   ↳ Other,  3 ( 1.9) | 154,  2 ( 1.4) | 148,1 (20.0) | 5,0 ( 0.0) | 1
+<b>Reason(s) for IV fluid (check all that apply)</b>,,,,
+   ↳ Shock, 18 (11.7) | 154, 13 ( 8.8) | 148,4 (80.0) | 5,1 (100.) | 1
+   ↳ High/rising haematocrit, 52 (33.8) | 154, 51 (34.5) | 148,1 (20.0) | 5,0 ( 0.0) | 1
+   ↳ Anorexia, 57 (37.0) | 154, 57 (38.5) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Persistent vomiting, 20 (13.0) | 154, 20 (13.5) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Other, 29 (18.8) | 154, 29 (19.6) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+<b>Blood product tranfusion?</b> (*), 11 ( 7.2) | 153,  9 ( 6.1) | 147,2 (40.0) | 5,0 ( 0.0) | 1
+<b>Select all blood product transfusion that were administered</b>,,,,
+   ↳ Platelets,  6 ( 3.9) | 153,  5 ( 3.4) | 147,1 (20.0) | 5,0 ( 0.0) | 1
+   ↳ Whole blood/packed RBC,  6 ( 3.9) | 153,  4 ( 2.7) | 147,2 (40.0) | 5,0 ( 0.0) | 1
+   ↳ Frozen fresh plasma,  2 ( 1.3) | 153,  1 ( 0.7) | 147,1 (20.0) | 5,0 ( 0.0) | 1
+"<b>Platelets, total number of units</b> (+)", 7.0 ( 7.0-16.0) |   6,7.0 (7.0-7.0) |   5,N/A,N/A
+"<b>Whole blood/packed RBC, total number of units</b> (+)",2.0 (2.0-2.0) |   6,2.0 (1.8-2.0) |   4,N/A,N/A
+"<b>Fresh frozen plasma (FFP), total number of units</b> (+)",N/A,N/A,N/A,N/A
+<b>Intravenous Immunoglobulin?</b> (*),  2 ( 1.3) | 154,  1 ( 0.7) | 148,1 (20.0) | 5,0 ( 0.0) | 1
+<b>Diuretics? </b> (*), 16 (10.4) | 154, 12 ( 8.1) | 148,4 (80.0) | 5,0 ( 0.0) | 1
+<b>N-acetyl cysteine</b> (*),  1 ( 0.6) | 154,  0 ( 0.0) | 148,1 (20.0) | 5,0 ( 0.0) | 1
+<b>Fluid drainage</b> (*),  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+<b>Reason for this drainage</b> (*),,,,
+   ↳ Pleural effusion,  1 (100.) |   1,  1 (100.) |   1,N/A,N/A
+<b>Any supplemental oxygen?</b> (*), 10 ( 6.5) | 154,  6 ( 4.1) | 148,4 (80.0) | 5,0 ( 0.0) | 1
+<b>Select ALL types of respiratory support the patient received</b>,,,,
+   ↳ Nasal prong,  5 ( 3.2) | 154,  4 ( 2.7) | 148,1 (20.0) | 5,0 ( 0.0) | 1
+   ↳ Face mask,  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ High-flow nasal oxygen,  1 ( 0.6) | 154,  1 ( 0.7) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Non-invasive ventilation,  2 ( 1.3) | 154,  2 ( 1.4) | 148,0 ( 0.0) | 5,0 ( 0.0) | 1
+   ↳ Invasive ventilation,  6 ( 3.9) | 154,  3 ( 2.0) | 148,3 (60.0) | 5,0 ( 0.0) | 1
+<b>Number of calendar days the patient received any respiratory support </b> (+),18.0 ( 7.5-24.5) |   7, 7.5 ( 5.0-14.5) |   4,21.0 (19.5-38.0) | 3,N/A
+<b>Type of non-invasive ventilation</b> (*),,,,
+   ↳ CPAP,  2 (100.) |   2,  2 (100.) |   2,N/A,N/A
+<b>Neuromuscular blocking agents</b> (*),  4 ( 2.6) | 154,  2 ( 1.4) | 148,2 (40.0) | 5,0 ( 0.0) | 1
+<b>Tracheostomy inserted</b> (*),  4 ( 2.6) | 154,  1 ( 0.7) | 148,3 (60.0) | 5,0 ( 0.0) | 1
+<b>Renal replacement therapy (RRT) or dialysis</b> (*),  3 ( 1.9) | 154,  1 ( 0.7) | 148,2 (40.0) | 5,0 ( 0.0) | 1
+<b>Total RRT or dialysis duration during observation (days)</b> (+),13.0 (10.5-18.5) |   3,N/A,N/A,N/A
+<b>Inotropes / vasopressors</b> (*), 10 ( 6.5) | 154,  6 ( 4.1) | 148,4 (80.0) | 5,0 ( 0.0) | 1
+<b>ICU / ITU / High Dependency Unit / Intermediate Care Unit admission</b> (*), 31 (20.1) | 154, 26 (17.6) | 148,4 (80.0) | 5,1 (100.) | 1
+<b>Duration of first ICU admission (days)</b> (+),4.0 (2.0-6.0) |  31,4.0 (2.2-6.0) |  26,20.0 (10.8-33.2) | 4,N/A
+<b>Was the patient admitted to ICU more than once? </b> (*),  1 ( 3.2) |  31,  1 ( 3.8) |  26,0 ( 0.0) | 4,0 ( 0.0) | 1
+<b>Duration of final ICU admission (days)</b> (+),N/A,N/A,N/A,N/A

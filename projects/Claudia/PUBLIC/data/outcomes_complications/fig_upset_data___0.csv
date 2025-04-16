@@ -1,0 +1,6 @@
+index,count,short_label,label
+compl_acuterenal,6,<b>Acute renal injury / acute renal failure</b>,<b>Acute renal injury / acute renal failure</b>
+compl_unlisted_0item___Other,5,"<b>Select other complication(s)</b>, Other","<b>Select other complication(s)</b>, Other"
+compl_reshockep___1,3,"<b>Number of re-shock episodes</b>, 1","<b>Number of re-shock episodes</b>, 1"
+compl_acutehepat,3,<b>Acute hepatitis</b>,<b>Acute hepatitis</b>
+compl_unlisted_1item___Other,1,"<b>>Select additional other ...</b>, Other","<b>>Select additional other complication(s) 2</b>, Other"

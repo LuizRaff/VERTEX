@@ -1,0 +1,11 @@
+variable,count,label,short_label
+compl_shock,20,<b>Shock </b>,<b>Shock </b>
+compl_othorgan,15,<b>Any other organ complications</b>,<b>Any other organ complications</b>
+compl_pleurascite,12,<b>Pleural effusion / ascites</b>,<b>Pleural effusion / ascites</b>
+compl_sepsis,11,<b>Sepsis</b>,<b>Sepsis</b>
+compl_unlisted,10,<b>Other complication(s)</b>,<b>Other complication(s)</b>
+compl_coagulatio,7,<b>Coagulation disorder / DIC</b>,<b>Coagulation disorder / DIC</b>
+compl_acuterenal,6,<b>Acute renal injury / acute renal failure</b>,<b>Acute renal injury / acute renal failure</b>
+compl_unlisted_0item___Other,5,"<b>Select other complication(s)</b>, Other","<b>Select other complication(s)</b>, Other"
+compl_severeliver,5,<b>Severe liver disease (new onset)</b>,<b>Severe liver disease (new onset)</b>
+compl_severebleed_yn,4,<b>Severe bleeding (requiring intervention)</b>,<b>Severe bleeding (requiring intervention)</b>

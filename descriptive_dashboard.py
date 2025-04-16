@@ -1,21 +1,25 @@
-import dash
+import importlib.util
 import json
-from dash import dcc, html, callback_context
-import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output, State, ALL
-import numpy as np
-import pandas as pd
-import plotly.graph_objs as go
-import sys
-# import IsaricDraw as idw
-# import redcap_config as rc_config
-import getREDCapData as getRC
+
 # from insight_panels import *
 # from insight_panels.__init__ import __all__ as ip_list
 import os
 import shutil
-import importlib.util
+import sys
 import webbrowser
+
+import dash
+import dash_bootstrap_components as dbc
+
+# import IsaricDraw as idw
+# import redcap_config as rc_config
+import getREDCapData as getRC
+import numpy as np
+import pandas as pd
+import plotly.graph_objs as go
+from dash import callback_context, dcc, html
+from dash.dependencies import ALL, Input, Output, State
+
 # import dash_auth
 # import flask_caching as fc
 
@@ -24,10 +28,7 @@ import webbrowser
 # PROJECT PATHS (CHANGE THIS)
 ############################################
 
-# init_project_path = 'projects/ARChetypeCRF_mpox_synthetic/'
-# init_project_path = 'projects/ARChetypeCRF_dengue_synthetic/'
-# init_project_path = 'projects/ARChetypeCRF_h5nx_synthetic/'
-init_project_path = 'projects/ARChetypeCRF_h5nx_synthetic_mf/'
+init_project_path = 'projects/claudia/'
 
 # def get_project_path():
 #     with open('vertex_projects_path.txt', 'r') as f:
@@ -227,7 +228,7 @@ def create_map(df_countries, map_layout_dict=None):
 
     map_colorscale = get_map_colorscale(df_countries)
 
-    fig = go.Figure(go.Choroplethmap(
+    fig = go.Figure(go.Choroplethmapbox(
         geojson=geojson,
         featureidkey='properties.ADM0_A3',
         locations=df_countries['country_iso'],
@@ -1123,12 +1124,15 @@ def main():
 
     map_style = ['open-street-map', 'carto-positron']
     map_layout_dict = dict(
-        map_style=map_style[1],
-        map_zoom=config_dict['map_layout_zoom'],
-        map_center={
-            'lat': config_dict['map_layout_center_latitude'],
-            'lon': config_dict['map_layout_center_longitude']},
-        margin={'r': 0, 't': 0, 'l': 0, 'b': 0},
+        mapbox=dict(
+            style=map_style[1],
+            center={
+                'lat': config_dict['map_layout_center_latitude'],
+                'lon': config_dict['map_layout_center_longitude']
+            },
+            zoom=config_dict['map_layout_zoom'],
+        ),
+        margin={'r': 0, 't': 0, 'l': 0, 'b': 0}
     )
 
     fig = create_map(df_countries, map_layout_dict)

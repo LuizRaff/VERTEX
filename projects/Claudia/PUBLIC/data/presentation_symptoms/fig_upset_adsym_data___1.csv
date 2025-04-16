@@ -1,0 +1,26 @@
+index,label,count
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_fatigue', 'adsym_headache', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>', '<b>Vomiting</b>')",30
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_fatigue', 'adsym_headache')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>')",23
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_headache')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Headache</b>')",15
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_headache', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Headache</b>', '<b>Vomiting</b>')",14
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_fatigue')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>')",13
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Vomiting</b>')",7
+"('adsym_feverplus', 'adsym_myalgia', 'adsym_fatigue', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Vomiting</b>')",6
+"('adsym_feverplus', 'adsym_myalgia')","('<b>Fever / chills / rigors</b>', '<b>Muscle aches / Myalgia</b>')",6
+"('adsym_fatigue',)","('<b>Fatigue / Malaise / Lethargy</b>',)",6
+"('adsym_feverplus', 'adsym_fatigue')","('<b>Fever / chills / rigors</b>', '<b>Fatigue / Malaise / Lethargy</b>')",5
+"('adsym_feverplus', 'adsym_fatigue', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Vomiting</b>')",3
+"('adsym_feverplus', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Vomiting</b>')",3
+"('adsym_myalgia', 'adsym_headache')","('<b>Muscle aches / Myalgia</b>', '<b>Headache</b>')",3
+"('adsym_myalgia', 'adsym_fatigue')","('<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>')",3
+"('adsym_feverplus', 'adsym_fatigue', 'adsym_headache')","('<b>Fever / chills / rigors</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>')",2
+"('adsym_feverplus', 'adsym_headache', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Headache</b>', '<b>Vomiting</b>')",2
+"('adsym_feverplus',)","('<b>Fever / chills / rigors</b>',)",2
+"('adsym_fatigue', 'adsym_headache', 'adsym_vomit')","('<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>', '<b>Vomiting</b>')",2
+"('adsym_feverplus', 'adsym_fatigue', 'adsym_headache', 'adsym_vomit')","('<b>Fever / chills / rigors</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>', '<b>Vomiting</b>')",1
+"('adsym_feverplus', 'adsym_headache')","('<b>Fever / chills / rigors</b>', '<b>Headache</b>')",1
+"('adsym_myalgia', 'adsym_fatigue', 'adsym_headache')","('<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>')",1
+"('adsym_myalgia', 'adsym_fatigue', 'adsym_vomit')","('<b>Muscle aches / Myalgia</b>', '<b>Fatigue / Malaise / Lethargy</b>', '<b>Vomiting</b>')",1
+"('adsym_fatigue', 'adsym_headache')","('<b>Fatigue / Malaise / Lethargy</b>', '<b>Headache</b>')",1
+"('adsym_headache', 'adsym_vomit')","('<b>Headache</b>', '<b>Vomiting</b>')",1
+"('adsym_vomit',)","('<b>Vomiting</b>',)",1

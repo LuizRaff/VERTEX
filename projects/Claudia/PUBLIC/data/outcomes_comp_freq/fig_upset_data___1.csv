@@ -1,0 +1,9 @@
+index,label,count
+"('compl_unlisted_0item___Other',)","('<b>Select other complication(s)</b>, Other',)",3
+"('compl_acuterenal',)","('<b>Acute renal injury / acute renal failure</b>',)",3
+"('compl_acutehepat',)","('<b>Acute hepatitis</b>',)",2
+"('compl_unlisted_1item___Other', 'compl_acutehepat')","('<b>>Select additional other complication(s) 2</b>, Other', '<b>Acute hepatitis</b>')",1
+"('compl_reshockep___1', 'compl_unlisted_0item___Other', 'compl_acuterenal')","('<b>Number of re-shock episodes</b>, 1', '<b>Select other complication(s)</b>, Other', '<b>Acute renal injury / acute renal failure</b>')",1
+"('compl_reshockep___1', 'compl_acuterenal')","('<b>Number of re-shock episodes</b>, 1', '<b>Acute renal injury / acute renal failure</b>')",1
+"('compl_reshockep___1',)","('<b>Number of re-shock episodes</b>, 1',)",1
+"('compl_unlisted_0item___Other', 'compl_acuterenal')","('<b>Select other complication(s)</b>, Other', '<b>Acute renal injury / acute renal failure</b>')",1

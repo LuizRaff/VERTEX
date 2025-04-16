@@ -1,0 +1,13 @@
+index,label,count
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid')",60
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid', 'treat_fluid_oral')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid', '<b>Oral rehydration? </b>')",59
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid', 'treat_fluid_oral', 'treat_icu')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid', '<b>Oral rehydration? </b>', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>')",5
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid', 'treat_icu', 'treat_antibiotic')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>', '<b>Antibiotics</b>')",5
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid', 'treat_icu')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>')",4
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid', 'treat_fluid_oral', 'treat_antibiotic')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid', '<b>Oral rehydration? </b>', '<b>Antibiotics</b>')",3
+"('treat_fluid_parent', 'treat_fluid_parentyp___Crystalloid', 'treat_fluid_oral', 'treat_icu', 'treat_antibiotic')","('<b>Parenteral IV fluid?</b>', '<b>Select all parenteral fluid administered</b>, Crystalloid', '<b>Oral rehydration? </b>', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>', '<b>Antibiotics</b>')",3
+"('treat_fluid_oral',)","('<b>Oral rehydration? </b>',)",3
+"('treat_fluid_parent', 'treat_icu', 'treat_antibiotic')","('<b>Parenteral IV fluid?</b>', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>', '<b>Antibiotics</b>')",2
+"('treat_fluid_oral', 'treat_icu', 'treat_antibiotic')","('<b>Oral rehydration? </b>', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>', '<b>Antibiotics</b>')",1
+"('treat_fluid_oral', 'treat_icu')","('<b>Oral rehydration? </b>', '<b>ICU / ITU / HDU / Intermediate Care Unit admission</b>')",1
+"('treat_antibiotic',)","('<b>Antibiotics</b>',)",1

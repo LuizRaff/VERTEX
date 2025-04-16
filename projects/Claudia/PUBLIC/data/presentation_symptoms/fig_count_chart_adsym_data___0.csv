@@ -1,0 +1,11 @@
+variable,count,label,short_label
+adsym_feverplus,133,<b>Fever / chills / rigors</b>,<b>Fever / chills / rigors</b>
+adsym_myalgia,122,<b>Muscle aches / Myalgia</b>,<b>Muscle aches / Myalgia</b>
+adsym_fatigue,97,<b>Fatigue / Malaise / Lethargy</b>,<b>Fatigue / Malaise / Lethargy</b>
+adsym_headache,96,<b>Headache</b>,<b>Headache</b>
+adsym_vomit,71,<b>Vomiting</b>,<b>Vomiting</b>
+adsym_haemorrhag_yn,66,<b>Bleeding / Haemorrhage</b>,<b>Bleeding / Haemorrhage</b>
+adsym_abdpain,60,<b>Abdominal pain</b>,<b>Abdominal pain</b>
+adsym_anorexia,52,<b>Anorexia</b>,<b>Anorexia</b>
+adsym_retroorbit,43,<b>Retro-orbital pain</b>,<b>Retro-orbital pain</b>
+adsym_unlisted_yn,37,<b>Other sign(s) or abnormality</b>,<b>Other sign(s) or abnormality</b>

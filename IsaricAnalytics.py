@@ -1,11 +1,8 @@
-import pandas as pd
-import numpy as np
 import warnings
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.model_selection import StratifiedKFold
-# from scipy.stats import fisher_exact
-from sklearn.metrics import accuracy_score, classification_report
-from sklearn.metrics import confusion_matrix
+
+import numpy as np
+import pandas as pd
+
 # from sklearn.metrics import balanced_accuracy_score, make_scorer
 # from typing import List, Union
 # from bertopic import BERTopic
@@ -15,10 +12,16 @@ from sklearn.metrics import confusion_matrix
 # from sklearn.preprocessing import MinMaxScaler
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
-from statsmodels.stats.outliers_influence import variance_inflation_factor
 from lifelines import CoxPHFitter
 from scipy.stats import norm
+
+# from scipy.stats import fisher_exact
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.model_selection import StratifiedKFold
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from statsmodels.genmod.bayes_mixed_glm import BinomialBayesMixedGLM
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
 # from sklearn.impute import KNNImputer
 # from sklearn.linear_model import LogisticRegression
 # from sklearn.metrics import roc_auc_score, roc_curve, accuracy_score
@@ -1476,208 +1479,208 @@ def rmv_high_corr(df, correlation_threshold=0.5):
 
 
 
-def lasso_var_sel_binary(df, outcome_col='mapped_outcome', random_state=42):
-    """
-    Prepare data and select features using binary logistic regression with elastic net penalty.
-    Specifically designed for binary outcomes only.
-    """
-    if outcome_col not in df.columns:
-        raise ValueError(f"Outcome column '{outcome_col}' not found in DataFrame")
+# def lasso_var_sel_binary(df, outcome_col='mapped_outcome', random_state=42):
+#     """
+#     Prepare data and select features using binary logistic regression with elastic net penalty.
+#     Specifically designed for binary outcomes only.
+#     """
+#     if outcome_col not in df.columns:
+#         raise ValueError(f"Outcome column '{outcome_col}' not found in DataFrame")
 
 
-    # Separate predictors and outcome
-    y = df[outcome_col].copy()
-    X_ini = df.drop(columns=[outcome_col])
-    print(f"\nInitial shape of X: {X_ini.shape}")
+#     # Separate predictors and outcome
+#     y = df[outcome_col].copy()
+#     X_ini = df.drop(columns=[outcome_col])
+#     print(f"\nInitial shape of X: {X_ini.shape}")
 
-    # Encode the binary outcome
-    label_encoder = LabelEncoder()
-    y = label_encoder.fit_transform(y)
+#     # Encode the binary outcome
+#     label_encoder = LabelEncoder()
+#     y = label_encoder.fit_transform(y)
 
-    # Verify that we have a binary outcome
-    n_classes = len(np.unique(y))
-    if n_classes != 2:
-        raise ValueError("This function is designed for binary classification only. More than two classes found.")
+#     # Verify that we have a binary outcome
+#     n_classes = len(np.unique(y))
+#     if n_classes != 2:
+#         raise ValueError("This function is designed for binary classification only. More than two classes found.")
 
-    # Standardize features
-    scaler = StandardScaler()
-    numeric_cols = X_ini.select_dtypes(include=[np.number]).columns
-    print("Column dtypes:", X_ini.dtypes)
-    print("Numeric columns found:", len(numeric_cols))
+#     # Standardize features
+#     scaler = StandardScaler()
+#     numeric_cols = X_ini.select_dtypes(include=[np.number]).columns
+#     print("Column dtypes:", X_ini.dtypes)
+#     print("Numeric columns found:", len(numeric_cols))
 
-    X = X_ini.copy()
-    if len(numeric_cols) > 0:
-        X[numeric_cols] = scaler.fit_transform(X_ini[numeric_cols])
-    else:
-        print("No numeric columns to standardize")
-    X = pd.DataFrame(X, columns=X_ini.columns)
+#     X = X_ini.copy()
+#     if len(numeric_cols) > 0:
+#         X[numeric_cols] = scaler.fit_transform(X_ini[numeric_cols])
+#     else:
+#         print("No numeric columns to standardize")
+#     X = pd.DataFrame(X, columns=X_ini.columns)
 
-    print("\nOutcome classes:", dict(zip(label_encoder.classes_, range(len(label_encoder.classes_)))))
-    print(f"\nInitial shape of X: {X.shape}")
-    # Encode categorical predictors
-    categorical_cols = X.select_dtypes(include=['object', 'category']).columns
-    binary_cats = [col for col in categorical_cols if X[col].nunique() == 2]
-    multi_cats = [col for col in categorical_cols if X[col].nunique() > 2]
+#     print("\nOutcome classes:", dict(zip(label_encoder.classes_, range(len(label_encoder.classes_)))))
+#     print(f"\nInitial shape of X: {X.shape}")
+#     # Encode categorical predictors
+#     categorical_cols = X.select_dtypes(include=['object', 'category']).columns
+#     binary_cats = [col for col in categorical_cols if X[col].nunique() == 2]
+#     multi_cats = [col for col in categorical_cols if X[col].nunique() > 2]
 
-    for col in binary_cats:
-        le = LabelEncoder()
-        X[col] = le.fit_transform(X[col])
+#     for col in binary_cats:
+#         le = LabelEncoder()
+#         X[col] = le.fit_transform(X[col])
 
-    # Use dummies only for multi-category
-    X = pd.get_dummies(X, columns=multi_cats, prefix_sep='*_*')
-    print(f"\nshape of X after one-hot: {X.shape}")
-    X.to_csv('ISARIC_mpox2rmv_1hot.csv', index=True)
+#     # Use dummies only for multi-category
+#     X = pd.get_dummies(X, columns=multi_cats, prefix_sep='*_*')
+#     print(f"\nshape of X after one-hot: {X.shape}")
+#     X.to_csv('ISARIC_mpox2rmv_1hot.csv', index=True)
 
-    if X.shape[1] > 0:
-        print("First actual predictor column:", X.columns[0])
-    else:
-        raise ValueError("No predictor columns left after dropping outcome (and ID if applicable).")
-
-
-
-    # Fit binary logistic regression with elastic net
-    # For binary classification, multi_class defaults to 'ovr', which yields a single set of coefficients.
-    l1_vec = [0.1, 0.2, 0.3, 0.7, 0.8, 0.9]
-    C_vec = np.logspace(-4, 4, 40)
-    logistic = LogisticRegressionCV(
-        penalty='elasticnet',
-        l1_ratios= l1_vec,
-        solver='saga',
-        cv=StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state),
-        random_state=random_state,
-        max_iter=5000,
-        class_weight='balanced',
-        Cs= C_vec,
-        tol=1e-4,
-        scoring='balanced_accuracy'
-    )
+#     if X.shape[1] > 0:
+#         print("First actual predictor column:", X.columns[0])
+#     else:
+#         raise ValueError("No predictor columns left after dropping outcome (and ID if applicable).")
 
 
-    # Below is the original way we started
-    logistic.fit(X, y)
 
-    print("Original l1_ratios specified:", l1_vec)
-    print("Model's l1_ratios attribute:", logistic.l1_ratios)
-    print("Shape of logistic.scores_[1]:", logistic.scores_[1].shape)
-    print("\nFirst 10 scores for each row:")
-    for i in [0,1]:  # explicitly loop through both rows
-        print(f"\nRow {i} (supposed to be l1_ratio = {l1_vec[i]}):")
-        print(logistic.scores_[1][0, :10, i])
+#     # Fit binary logistic regression with elastic net
+#     # For binary classification, multi_class defaults to 'ovr', which yields a single set of coefficients.
+#     l1_vec = [0.1, 0.2, 0.3, 0.7, 0.8, 0.9]
+#     C_vec = np.logspace(-4, 4, 40)
+#     logistic = LogisticRegressionCV(
+#         penalty='elasticnet',
+#         l1_ratios= l1_vec,
+#         solver='saga',
+#         cv=StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state),
+#         random_state=random_state,
+#         max_iter=5000,
+#         class_weight='balanced',
+#         Cs= C_vec,
+#         tol=1e-4,
+#         scoring='balanced_accuracy'
+#     )
 
 
-    scores_dt = np.mean(logistic.scores_[1],axis=0)
-    print("Mean scores for varying l1_ratio and Cs")
-    print(scores_dt)  # print matrix for this fold
+#     # Below is the original way we started
+#     logistic.fit(X, y)
 
-    scores_df = pd.DataFrame(
-    scores_dt,  # Transpose to get l1_ratios as rows
-    index=C_vec,
-    columns=l1_vec
-    )
+#     print("Original l1_ratios specified:", l1_vec)
+#     print("Model's l1_ratios attribute:", logistic.l1_ratios)
+#     print("Shape of logistic.scores_[1]:", logistic.scores_[1].shape)
+#     print("\nFirst 10 scores for each row:")
+#     for i in [0,1]:  # explicitly loop through both rows
+#         print(f"\nRow {i} (supposed to be l1_ratio = {l1_vec[i]}):")
+#         print(logistic.scores_[1][0, :10, i])
 
-    # Label the axes
-    scores_df.index.name = 'C'
-    scores_df.columns.name = 'l1_ratio'
-    # logistic.coef_ will have shape (1, n_features) for binary classification
-    coef_df = pd.DataFrame(logistic.coef_, columns=X.columns)
-    # No indexing by classes since it's binary (one row of coefficients)
 
-    # Compute feature importance as absolute value of coefficients
-    # Since there's only one class row, mean across rows is just that row
-    feature_importance = np.abs(coef_df.iloc[0, :])
+#     scores_dt = np.mean(logistic.scores_[1],axis=0)
+#     print("Mean scores for varying l1_ratio and Cs")
+#     print(scores_dt)  # print matrix for this fold
 
-    # Select features with non-zero importance
-    selected_features = feature_importance[feature_importance > 0.0].index.tolist()
+#     scores_df = pd.DataFrame(
+#     scores_dt,  # Transpose to get l1_ratios as rows
+#     index=C_vec,
+#     columns=l1_vec
+#     )
 
-    # Predictions
-    y_pred = logistic.predict(X)
+#     # Label the axes
+#     scores_df.index.name = 'C'
+#     scores_df.columns.name = 'l1_ratio'
+#     # logistic.coef_ will have shape (1, n_features) for binary classification
+#     coef_df = pd.DataFrame(logistic.coef_, columns=X.columns)
+#     # No indexing by classes since it's binary (one row of coefficients)
 
-    # Performance metrics
-    print("\nPerformance Metrics:")
-    print("-------------------")
+#     # Compute feature importance as absolute value of coefficients
+#     # Since there's only one class row, mean across rows is just that row
+#     feature_importance = np.abs(coef_df.iloc[0, :])
 
-    # Find the best C and corresponding CV score
-    best_c = logistic.C_[0]
-    c_index = np.where(logistic.Cs_ == best_c)[0][0]
-    all_class_scores = []
-    for cl in logistic.scores_:
-        all_class_scores.extend(logistic.scores_[cl][:, c_index])
-    best_cv_score = np.mean(all_class_scores)
+#     # Select features with non-zero importance
+#     selected_features = feature_importance[feature_importance > 0.0].index.tolist()
 
-    print(f"Best C value: {best_c}")
-    print("\nConfusion Matrix:")
-    conf_matrix = confusion_matrix(y, y_pred)
-    print(conf_matrix)
-    print("\nClassification Report:")
+#     # Predictions
+#     y_pred = logistic.predict(X)
 
-    target_names = [str(c) for c in label_encoder.classes_]
-    print(classification_report(y, y_pred, target_names=target_names))
-    print(f"Best CV score: {best_cv_score}")
+#     # Performance metrics
+#     print("\nPerformance Metrics:")
+#     print("-------------------")
 
-    # l1_ratio_ returns the best ratio found for each class. For binary, there should be one:
-    print(f"Best l1_ratio: {logistic.l1_ratio_[0]}")
+#     # Find the best C and corresponding CV score
+#     best_c = logistic.C_[0]
+#     c_index = np.where(logistic.Cs_ == best_c)[0][0]
+#     all_class_scores = []
+#     for cl in logistic.scores_:
+#         all_class_scores.extend(logistic.scores_[cl][:, c_index])
+#     best_cv_score = np.mean(all_class_scores)
 
-    print(f"\nSelected {len(selected_features)} features")
+#     print(f"Best C value: {best_c}")
+#     print("\nConfusion Matrix:")
+#     conf_matrix = confusion_matrix(y, y_pred)
+#     print(conf_matrix)
+#     print("\nClassification Report:")
 
-    # Print feature importance for selected features
-    print("\nFeature importance for selected features:")
-    for feat in sorted(selected_features, key=lambda x: feature_importance[x], reverse=True):
-        print(f"{feat}: {feature_importance[feat]:.4f}")
+#     target_names = [str(c) for c in label_encoder.classes_]
+#     print(classification_report(y, y_pred, target_names=target_names))
+#     print(f"Best CV score: {best_cv_score}")
 
-    X_selected = X[selected_features]
-    print(f"Final shape of selected features: {X_selected.shape}")
+#     # l1_ratio_ returns the best ratio found for each class. For binary, there should be one:
+#     print(f"Best l1_ratio: {logistic.l1_ratio_[0]}")
 
-    # Store metrics in a dictionary
-    metrics = {
-        'confusion_matrix': conf_matrix,
-        'classification_report': classification_report(y, y_pred, target_names=label_encoder.classes_, output_dict=True),
-        'accuracy': accuracy_score(y, y_pred),
-        'cv_scores': all_class_scores
-    }
+#     print(f"\nSelected {len(selected_features)} features")
 
-    original_features = {}
-    for feature in selected_features:
-      if '*_*' in feature:
-        orig_name = feature.split('*_*')[0]
-        coef = abs(feature_importance[feature])
-        original_features[orig_name] = max(original_features.get(orig_name, 0), coef)
-      else:
-        original_features[feature] = abs(feature_importance[feature])
+#     # Print feature importance for selected features
+#     print("\nFeature importance for selected features:")
+#     for feat in sorted(selected_features, key=lambda x: feature_importance[x], reverse=True):
+#         print(f"{feat}: {feature_importance[feat]:.4f}")
 
-    # Create grouped results showing all categories
-    grp_results= create_grouped_results(selected_features, feature_importance)
-    results_df = grp_results[0]
-    sorted_fields = grp_results[1]
-    categorical_fields = grp_results[2]
+#     X_selected = X[selected_features]
+#     print(f"Final shape of selected features: {X_selected.shape}")
 
-    # Print the grouped results
-    print("\nSelected features grouped by main field:")
-    print(results_df)
+#     # Store metrics in a dictionary
+#     metrics = {
+#         'confusion_matrix': conf_matrix,
+#         'classification_report': classification_report(y, y_pred, target_names=label_encoder.classes_, output_dict=True),
+#         'accuracy': accuracy_score(y, y_pred),
+#         'cv_scores': all_class_scores
+#     }
 
-    # Save to CSV
-    results_df.to_csv('feature_coefficients_grouped.csv', index=False)
+#     original_features = {}
+#     for feature in selected_features:
+#       if '*_*' in feature:
+#         orig_name = feature.split('*_*')[0]
+#         coef = abs(feature_importance[feature])
+#         original_features[orig_name] = max(original_features.get(orig_name, 0), coef)
+#       else:
+#         original_features[feature] = abs(feature_importance[feature])
 
-    # Note: We may still want to keep the original X_selected DataFrame for further analysis
-    X_selected = X[selected_features]
-    #print(f"Final shape of selected features: {X_selected.shape}")
+#     # Create grouped results showing all categories
+#     grp_results= create_grouped_results(selected_features, feature_importance)
+#     results_df = grp_results[0]
+#     sorted_fields = grp_results[1]
+#     categorical_fields = grp_results[2]
 
-    # After running create_grouped_results, extract main fields
-    main_fields = []
-    for field in sorted_fields:  # We already have sorted_fields from earlier
-        if field in categorical_fields:
-            main_fields.append(field)
-        else:
-            main_fields.append(field)  # For regular features
+#     # Print the grouped results
+#     print("\nSelected features grouped by main field:")
+#     print(results_df)
 
-    # Convert main_fields list to a single-column DataFrame
-    main_fields_df = pd.DataFrame({'Main Features': main_fields})
-    print(main_fields_df)
+#     # Save to CSV
+#     results_df.to_csv('feature_coefficients_grouped.csv', index=False)
 
-    top_params = get_parameter_ranking(logistic, n_top=20)
-    print("\nTop parameter combinations:")
-    print(top_params)
+#     # Note: We may still want to keep the original X_selected DataFrame for further analysis
+#     X_selected = X[selected_features]
+#     #print(f"Final shape of selected features: {X_selected.shape}")
 
-    return results_df, scores_df, main_fields_df, top_params, X_selected, y, selected_features, coef_df, label_encoder, feature_importance, metrics
+#     # After running create_grouped_results, extract main fields
+#     main_fields = []
+#     for field in sorted_fields:  # We already have sorted_fields from earlier
+#         if field in categorical_fields:
+#             main_fields.append(field)
+#         else:
+#             main_fields.append(field)  # For regular features
+
+#     # Convert main_fields list to a single-column DataFrame
+#     main_fields_df = pd.DataFrame({'Main Features': main_fields})
+#     print(main_fields_df)
+
+#     top_params = get_parameter_ranking(logistic, n_top=20)
+#     print("\nTop parameter combinations:")
+#     print(top_params)
+
+#     return results_df, scores_df, main_fields_df, top_params, X_selected, y, selected_features, coef_df, label_encoder, feature_importance, metrics
 
     # Group features by main field and sort by importance
 def create_grouped_results(selected_features, feature_importance):
@@ -1764,8 +1767,8 @@ def get_parameter_ranking(logistic, n_top=10):
     Create a ranking of parameter combinations using stored scores
     and coefficient paths.
     """
-    import pandas as pd
     import numpy as np
+    import pandas as pd
 
     # Create empty list to store parameter information
     param_scores = []

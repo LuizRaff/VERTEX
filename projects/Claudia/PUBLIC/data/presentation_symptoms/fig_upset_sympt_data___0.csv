@@ -1,0 +1,6 @@
+index,count,short_label,label
+"sympt_haemorrhag_yn___Yes, non-severe",55,"<b>Bleeding / haemorrhage</b>, Yes, non-severe","<b>Bleeding / haemorrhage</b>, Yes, non-severe"
+sympt_haemorrhag_site___Petechiae,14,"<b>Specify bleeding / haemorrhage site(s)</b>, Petechiae","<b>Specify bleeding / haemorrhage site(s)</b>, Petechiae"
+sympt_haemorrhag_site___Gums,13,"<b>Specify bleeding / haemorrhage site(s)</b>, Gums","<b>Specify bleeding / haemorrhage site(s)</b>, Gums"
+sympt_haemorrhag_site___Nose,12,"<b>Specify bleeding / haemorrhage site(s)</b>, Nose","<b>Specify bleeding / haemorrhage site(s)</b>, Nose"
+sympt_haemorrhag_site___GI tract,12,"<b>Specify bleeding / haemorrhage site(s)</b>, GI tract","<b>Specify bleeding / haemorrhage site(s)</b>, GI tract"
