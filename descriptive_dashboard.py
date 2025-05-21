@@ -468,6 +468,7 @@ def define_app_layout(fig, buttons, filter_options, map_layout_dict, project_nam
                     for logo in funders_logo_list
                 ]
                 +
+                
                 # NEW BUTTON REPORT #
                 [
                     dbc.Button(
@@ -478,6 +479,7 @@ def define_app_layout(fig, buttons, filter_options, map_layout_dict, project_nam
                     dcc.Download(id="download-report"),
                 ],
                 #####################
+                
                 style={
                     "position": "absolute",
                     "bottom": 0,
@@ -1200,11 +1202,11 @@ def register_callbacks(
         prevent_initial_call=True,
     )
     def on_report(n_clicks):
-        pdf_path = generate_report.main()
+        pdf_path, aux_var = generate_report.main()
         pdf = dcc.send_file(pdf_path)
         
-        generate_report.remove_tmp_images(generate_report.tmp_dir)
-        generate_report.remove_pdf(generate_report.output_pdf)
+        generate_report.remove_tmp_images(generate_report.tmp_dir_global)
+        generate_report.remove_pdf(generate_report.output_pdf_global)
         
         return pdf
 

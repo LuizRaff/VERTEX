@@ -1,0 +1,18 @@
+{
+	"project_name": "Claudia",
+    "api_url": "http://redcap.emilioribas.sp.gov.br/redcap/redcap_v10.0.21/API/",
+	"api_key": "F0057C872005DF18434FE41D9504839D",
+	"map_layout_center_latitude": 6,
+	"map_layout_center_longitude": -75,
+	"map_layout_zoom": 1.7,
+	"save_public_outputs": true,
+	"save_filtered_public_outputs": false,
+	"public_path": "PUBLIC/",
+	"insight_panels_path": "insight_panels/",
+	"insight_panels": [
+			"outcomes_comp",
+			"presentation_demogcomor",
+			"presentation_symptoms",
+   	 		"treatments_interventions"
+	]
+}

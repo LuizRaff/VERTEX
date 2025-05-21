@@ -20,11 +20,11 @@ from reportlab.lib import colors
 
 idw.save_inputs_to_file = lambda locals_dict: None
 
-root = Path(__file__).resolve().parent
-data_root = root / "projects" / "Claudia" / "PUBLIC" / "data"
-metadata_file = data_root / "dashboard_metadata.txt"
-tmp_dir = root / "reporting" / "tmp_images"
-output_pdf = root / "reporting" / "dashboard_report.pdf"
+root_global = Path(__file__).resolve().parent
+data_root_global = root_global / "projects" / "Claudia" / "PUBLIC" / "data"
+metadata_file_global = data_root_global / "dashboard_metadata.txt"
+tmp_dir_global = root_global / "reporting" / "tmp_images"
+output_pdf_global = root_global / "reporting" / "dashboard_report.docx"
 
 
 def generate_report_from_dashboard(data_root: Path, metadata_file: Path):
@@ -141,7 +141,19 @@ def remove_tmp_images(tmp_dir):
         for img_file in tmp_dir.glob("*.png"):
             img_file.unlink()
 
+def generate_full_report():
+    """
+    Generate the full report by calling the main function and removing the temporary files.
+    """
+    return
+
+def generate_indv_report():
+    """
+    Generate the individual report by calling the main function.
+    """
+    return
+
 def main():
-    assets = generate_report_from_dashboard(data_root, metadata_file)
-    build_pdf(assets, tmp_dir, output_pdf)
-    return (str(output_pdf), str(tmp_dir))
+    assets = generate_report_from_dashboard(data_root_global, metadata_file_global)
+    build_pdf(assets, tmp_dir_global, output_pdf_global)
+    return (str(output_pdf_global), str(tmp_dir_global))
