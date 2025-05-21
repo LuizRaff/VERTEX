@@ -42,3 +42,5 @@ tzdata==2024.1
 urllib3==2.2.1
 Werkzeug==3.0.1
 zipp==3.17.0
+kaleido==0.2.1
+reportlab==4.4.1
